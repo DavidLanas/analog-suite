@@ -1,0 +1,17 @@
+[package]
+name = "funkcomp"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "FunkComp - compresor multimodo para voces de funk, soul y R&B"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+nih_plug.workspace = true
+nih_plug_egui.workspace = true
+dsp-core = { path = "../../crates/dsp-core" }
+funkcomp-dsp = { path = "../../crates/funkcomp-dsp" }
+ui-common = { path = "../../crates/ui-common" }
+presets = { path = "../../crates/presets" }
