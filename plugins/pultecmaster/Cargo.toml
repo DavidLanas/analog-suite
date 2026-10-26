@@ -1,0 +1,17 @@
+[package]
+name = "pultecmaster"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "PultecMaster - EQ pasivo de tubos (inspirado en un clásico) para graves y agudos"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+nih_plug.workspace = true
+nih_plug_egui.workspace = true
+dsp-core = { path = "../../crates/dsp-core" }
+pultec-dsp = { path = "../../crates/pultec-dsp" }
+ui-common = { path = "../../crates/ui-common" }
+presets = { path = "../../crates/presets" }
